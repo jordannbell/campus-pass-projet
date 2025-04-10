@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-navy: #003366;
+  --color-red: #8B0000;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-gray-900;
+  }
+}
+
+@layer components {
+  .text-navy {
+    color: var(--color-navy);
+  }
+  
+  .bg-navy {
+    background-color: var(--color-navy);
+  }
+  
+  .from-navy {
+    --tw-gradient-from: var(--color-navy);
+  }
+}
